@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acronyms",
+  "info": {
+    "name": "Acronym"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "categories": {
+      "collection": "categories"
+    },
+    "Excerpt": {
+      "type": "string"
+    }
+  }
+}
